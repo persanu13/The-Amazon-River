@@ -1,0 +1,120 @@
+:root{
+    --color1:#674A40;
+    --color2:#50A3A4;
+    --color3:#FCAF38;
+    --color4:#F95335;
+    --size:calc(10vh + 5vw);
+}
+
+
+body{
+    margin: 0;
+    font-size: 50px;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color:var(--color3);
+    position: relative;
+    z-index: 3;
+}
+
+
+.wave{
+    width: 101%;
+    position: absolute;
+    bottom: 0;
+    left: 0%; 
+    transform: rotateY(180deg);
+    left: -1%;
+    fill:var(--color2);
+}
+
+.piranha{
+    position: absolute;
+    max-width: 4em;
+    top: 15em;
+    z-index: 2;
+}
+.titlu{
+    justify-content: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:clamp(2rem, 10vw, 5rem);
+    position: absolute;
+    left:clamp(0rem , 15vw, 15rem);
+    top:5rem ;
+  
+}
+
+.titlu div{
+    display: flex;
+    justify-content: center;
+    
+}
+.titlu div h1{
+    
+    margin: 0;
+    color:#101010;
+}
+
+.nava{
+    background-color:var(--color3) ;
+    width:calc(2*var(--size));
+    height:calc(2*var(--size));
+    position: absolute;
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+    right:0;
+} 
+
+.hint{
+    position: absolute;
+    width: 25em;
+    height: 3em;
+    top: 37%;
+    left: 50%;
+    color:black;
+    font-size: 0.5em;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0;
+     text-align: center;
+     background-color: var(--color4);
+     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}
+
+.barca{
+    position: absolute;
+    top:13%;
+    left: 65%;
+    width: 27%;
+    height: 27%;
+    z-index: 2;
+  margin-top: 2em;
+}
+
+#wave{
+    fill:var(--color2);
+    fill-opacity:1;
+    width: 101%;
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+
+}
+
+
+#wave2{
+    fill:var(--color2);
+    fill-opacity:1;
+    width: 101%;
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    transform: rotateY(180deg);
+
+}
